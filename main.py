@@ -15,6 +15,13 @@ from agent import run_agent
 # .env file se API keys load karo
 load_dotenv()
 
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
+def index():
+    with open("index.html") as f:
+        return f.read()
+
 # Global vectorstore — server start hone pe ek baar banta hai
 vectorstore = None
 
