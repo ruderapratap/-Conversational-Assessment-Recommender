@@ -1,0 +1,17 @@
+[project]
+name = "shl-recommender"
+version = "0.1.0"
+requires-python = "==3.11.*"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn>=0.29.0",
+    "langchain>=0.2.0",
+    "langchain-mistralai>=0.1.0",
+    "langchain-chroma>=0.1.0",
+    "langchain-core>=0.2.0",
+    "chromadb>=0.5.0",
+    "mistralai>=0.4.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+]
